@@ -1,0 +1,12 @@
+C:\git\FoodManagement\Measurement\bin\Debug\net5.0\Measurement.deps.json
+C:\git\FoodManagement\Measurement\bin\Debug\net5.0\Measurement.dll
+C:\git\FoodManagement\Measurement\bin\Debug\net5.0\ref\Measurement.dll
+C:\git\FoodManagement\Measurement\bin\Debug\net5.0\Measurement.pdb
+C:\git\FoodManagement\Measurement\obj\Debug\net5.0\Measurement.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\FoodManagement\Measurement\obj\Debug\net5.0\Measurement.AssemblyInfoInputs.cache
+C:\git\FoodManagement\Measurement\obj\Debug\net5.0\Measurement.AssemblyInfo.cs
+C:\git\FoodManagement\Measurement\obj\Debug\net5.0\Measurement.csproj.CoreCompileInputs.cache
+C:\git\FoodManagement\Measurement\obj\Debug\net5.0\Measurement.dll
+C:\git\FoodManagement\Measurement\obj\Debug\net5.0\ref\Measurement.dll
+C:\git\FoodManagement\Measurement\obj\Debug\net5.0\Measurement.pdb
+C:\git\FoodManagement\Measurement\obj\Debug\net5.0\Measurement.csprojAssemblyReference.cache

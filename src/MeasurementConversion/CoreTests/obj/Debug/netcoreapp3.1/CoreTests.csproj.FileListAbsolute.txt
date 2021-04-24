@@ -1,0 +1,4 @@
+C:\git\MeasurementConversion\src\MeasurementConversion\CoreTests\obj\Debug\netcoreapp3.1\CoreTests.csprojAssemblyReference.cache
+C:\git\MeasurementConversion\src\MeasurementConversion\CoreTests\obj\Debug\netcoreapp3.1\CoreTests.AssemblyInfoInputs.cache
+C:\git\MeasurementConversion\src\MeasurementConversion\CoreTests\obj\Debug\netcoreapp3.1\CoreTests.AssemblyInfo.cs
+C:\git\MeasurementConversion\src\MeasurementConversion\CoreTests\obj\Debug\netcoreapp3.1\CoreTests.csproj.CoreCompileInputs.cache
