@@ -21,5 +21,7 @@ namespace Jdn.Measurement.Core.Interfaces
         decimal ToPints();
 
         decimal ToGallons();
+
+        public IVolume ToOptimal();
     }
 }

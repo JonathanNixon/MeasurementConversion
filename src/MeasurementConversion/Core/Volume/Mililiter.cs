@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Jdn.Measurement.Core.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Jdn.Measurement.Core.Volume
 {
-    public class Milliliter : BaseVolume
+    public sealed class Milliliter : BaseVolume, IVolume
     {
         public Milliliter(decimal mililiters)
             : base()

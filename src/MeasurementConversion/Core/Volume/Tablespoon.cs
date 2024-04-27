@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Jdn.Measurement.Core.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Jdn.Measurement.Core.Volume
 {
-    public class Tablespoon : BaseVolume
+    public sealed class Tablespoon : BaseVolume, IVolume
     {
         public Tablespoon(decimal tablespoons)
             : base()
