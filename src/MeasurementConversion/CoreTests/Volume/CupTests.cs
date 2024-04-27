@@ -115,6 +115,17 @@ namespace Jdn.Measurement.Core.Tests.Volume
             Assert.IsTrue(volume.MultiplyBy(4).Amount == 6m);
         }
 
+        [TestMethod]
+        public void VerifyOptimalValue()
+        {
+            var volume = GetVolume(16m);
+            var result = volume.ToOptimal();
+
+            Assert.IsNotNull(result);
+            Assert.IsTrue(result.ToCups() == volume.ToCups());
+            Assert.AreEqual(result.UnitOfMeasure, volume.UnitOfMeasure);
+        }
+
         private IVolume GetVolume(decimal value)
         {
             return VolumeFactory.Cups(value);

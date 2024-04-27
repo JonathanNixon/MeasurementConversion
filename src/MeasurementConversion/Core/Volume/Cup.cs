@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Jdn.Measurement.Core.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Jdn.Measurement.Core.Volume
 {
-    public class Cup : BaseVolume
+    public sealed class Cup : BaseVolume, IVolume
     {
         public Cup(decimal cups)
             : base()
