@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/MeasurementConversion/v17
+/src/MeasurementConversion/.vs/MeasurementConversion
+/src/MeasurementConversion/Core/bin/Debug/net8.0
+/src/MeasurementConversion/CoreTests/bin/Debug/net8.0
