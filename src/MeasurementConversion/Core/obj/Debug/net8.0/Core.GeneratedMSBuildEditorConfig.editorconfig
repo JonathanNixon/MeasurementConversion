@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Jdn.Measurement.Core
-build_property.ProjectDir = C:\Users\jonat\Source\Repos\MeasurementConversion\src\MeasurementConversion\Core\
+build_property.ProjectDir = C:\Users\jonat\source\repos\MeasurementConversion\src\MeasurementConversion\Core\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

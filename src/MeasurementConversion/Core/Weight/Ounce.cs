@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Jdn.Measurement.Core.Mass
+namespace Jdn.Measurement.Core.Weight
 {
-    public class Ounce : BaseMass
+    public class Ounce : USCustomaryWeight
     {
         public Ounce(decimal ounces)
         {

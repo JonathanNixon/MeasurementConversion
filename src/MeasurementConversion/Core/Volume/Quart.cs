@@ -8,6 +8,7 @@ namespace Jdn.Measurement.Core.Volume
     public sealed class Quart : BaseVolume, IVolume
     {
         public Quart(decimal quarts)
+            :base(new SystemOfMeasurement(true))
         {
             this.unitOfMeasureAbbreviated = "qt.";
             this.Amount = quarts;

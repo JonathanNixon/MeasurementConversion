@@ -8,7 +8,7 @@ namespace Jdn.Measurement.Core.Volume
     public sealed class Cup : BaseVolume, IVolume
     {
         public Cup(decimal cups)
-            : base()
+            : base(new SystemOfMeasurement(true))
         {
             this.unitOfMeasureAbbreviated = "C";
             this.Amount = cups;

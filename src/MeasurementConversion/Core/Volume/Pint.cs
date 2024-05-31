@@ -8,7 +8,7 @@ namespace Jdn.Measurement.Core.Volume
     public sealed class Pint : BaseVolume, IVolume
     {
         public Pint(decimal pints)
-            : base()
+            : base(new SystemOfMeasurement(true))
         {
             this.unitOfMeasureAbbreviated = "pt.";
             this.Amount = pints;

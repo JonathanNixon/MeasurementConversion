@@ -9,7 +9,7 @@ namespace Jdn.Measurement.Core.Volume
     {
 
         public FluidOunce(decimal fluidOunces)
-            : base()
+            : base(new SystemOfMeasurement(true))
         {
             this.unitOfMeasureAbbreviated = "fluid oz.";
             this.Amount = fluidOunces;

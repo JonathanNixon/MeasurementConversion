@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5Le5EA9Z50jj9BbJ80dpd7p3KX3Nid4/6UHiSx4Trhzy0eW60B2zkV8LRM4yOQnoFULwgp9FEzTqtzeL09dVnw==",
+  "dgSpecHash": "94Bohj/KpPdS7aV3q+S65AYlxbk6RRw+bpoL4aQVuyerhDSsG7MvH848rctL6pBgNxBSMteXvMVCngTl2LgX0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jonat\\Source\\Repos\\MeasurementConversion\\src\\MeasurementConversion\\CoreTests\\Core.Tests.csproj",
+  "projectFilePath": "C:\\Users\\jonat\\source\\repos\\MeasurementConversion\\src\\MeasurementConversion\\CoreTests\\Core.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jonat\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\jonat\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",

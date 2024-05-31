@@ -11,24 +11,48 @@ namespace Jdn.Measurement.Core.Volume
         protected string unitOfMeasureAbbreviated;
         protected string unitOfMeasurePlural;
 
+        private ISystemOfMeasurement systemOfMeasurement;
+
         protected int numberOfDecimalPlaces = 2;
 
-        public BaseVolume()
+        public BaseVolume(ISystemOfMeasurement systemOfMeasurement)
         {
+            this.systemOfMeasurement = systemOfMeasurement;
             unitOfMeasure = this.GetType().Name;
             unitOfMeasurePlural = $"{unitOfMeasure}s";
+            unitOfMeasureAbbreviated = unitOfMeasurePlural.Substring(0, 3);
         }
 
         public IVolume ToOptimal()
+        {
+            if (systemOfMeasurement.IsUSCustomaryUnits())
+            {
+                ToOptimalUSCustomaryUnits();
+            }
+            else
+            {
+                return ToOptimalMetric();
+            }
+
+            return new FluidOunce(ToFluidOunces());
+        }
+
+        private IVolume ToOptimalUSCustomaryUnits()
         {
             if (ToGallons() >= 1) return new Gallon(ToGallons());
             if (ToCups() >= 1) return new Cup(ToCups());
             if (ToQuarts() >= 1) return new Quart(ToQuarts());
             if (ToPints() >= 1) return new Pint(ToPints());
-            if (ToTablespoons() >=1) return new Tablespoon(ToTablespoons());
-            if (ToTeaspoons() >= 1) return new Teaspoon(ToTeaspoons());
+            if (ToTablespoons() >= 1) return new Tablespoon(ToTablespoons());
+            
+            return new Teaspoon(ToTeaspoons());
+        }
 
-            return new FluidOunce(ToFluidOunces());
+        private IVolume ToOptimalMetric()
+        {
+            if (ToMilliliters() >= 1) return new Milliliter(ToMilliliters());
+
+            return new Milliliter(ToMilliliters());
         }
 
         public abstract decimal ToMilliliters();

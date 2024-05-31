@@ -1,5 +1,5 @@
 ﻿using Jdn.Measurement.Core.Interfaces;
-using Jdn.Measurement.Core.Mass;
+using Jdn.Measurement.Core.Weight;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
@@ -82,9 +82,9 @@ namespace Jdn.Measurement.Core.Tests.Mass
             Assert.IsTrue(volume.MultiplyBy(4).Amount == 6m);
         }
 
-        private IMass GetMass(decimal value)
+        private IWeight GetMass(decimal value)
         {
-            return MassFactory.Ounces(value);
+            return WeightFactory.Ounces(value);
         }
     }
 }

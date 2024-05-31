@@ -8,7 +8,7 @@ namespace Jdn.Measurement.Core.Volume
     public sealed class Gallon : BaseVolume, IVolume
     {
         public Gallon(decimal gallons)
-            : base()
+            : base(new SystemOfMeasurement(true))
         {
             this.unitOfMeasureAbbreviated = "gal.";
             this.Amount = gallons;

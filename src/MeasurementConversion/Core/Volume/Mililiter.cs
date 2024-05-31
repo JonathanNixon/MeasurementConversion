@@ -8,7 +8,7 @@ namespace Jdn.Measurement.Core.Volume
     public sealed class Milliliter : BaseVolume, IVolume
     {
         public Milliliter(decimal mililiters)
-            : base()
+            : base(new SystemOfMeasurement(false))
         {
             this.unitOfMeasureAbbreviated = "mL";
             this.Amount = mililiters;

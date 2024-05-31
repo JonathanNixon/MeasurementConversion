@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+AKGkbLhZXlud3DsQGlKJgTbiYS+n/yiAwRu3tQm+tTi6X0vf/BZEMbSVhpAg3QUACBc+omTuAVCT27bn90ZUg==",
+  "dgSpecHash": "vUIqTFHSo/Eriej+H2XynJ/m09SO91N9JGtRr/CyBHdeJ4vGifSm6mOCRTiiRXuimnDODcYCBLCDCMKJRn+cMQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jonat\\Source\\Repos\\MeasurementConversion\\src\\MeasurementConversion\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\jonat\\source\\repos\\MeasurementConversion\\src\\MeasurementConversion\\Core\\Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
