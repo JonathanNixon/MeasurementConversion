@@ -5,11 +5,11 @@ using System.Text;
 
 namespace Jdn.Measurement.Core.Volume
 {
-    public sealed class FluidOunce : BaseVolume, IVolume
+    public sealed class FluidOunce : USCustomaryVolume, IVolume
     {
 
         public FluidOunce(decimal fluidOunces)
-            : base(new SystemOfMeasurement(true))
+            : base()
         {
             this.unitOfMeasureAbbreviated = "fluid oz.";
             this.Amount = fluidOunces;

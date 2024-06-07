@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Measurement.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2ade10f83585a55f41edb8fd2238d6327375702a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abce08c8276a5c59867d35ea25699698476ded91")]
 [assembly: System.Reflection.AssemblyProductAttribute("Measurement.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Measurement.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

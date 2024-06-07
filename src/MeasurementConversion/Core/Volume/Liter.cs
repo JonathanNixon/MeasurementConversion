@@ -5,53 +5,53 @@ using System.Text;
 
 namespace Jdn.Measurement.Core.Volume
 {
-    public sealed class Tablespoon : USCustomaryVolume, IVolume
+    public sealed class Liter : MetricVolume, IVolume
     {
-        public Tablespoon(decimal tablespoons)
+        public Liter(decimal liters)
             : base()
         {
-            this.unitOfMeasureAbbreviated = "T";
-            this.Amount = tablespoons;
+            this.unitOfMeasureAbbreviated = "L";
+            this.Amount = liters;
         }
 
         public override decimal ToMilliliters()
         {
-            return System.Math.Round(this.Amount * 14.7867648m, 2);
+            return this.Amount / 1000;
         }
 
         public override decimal ToFluidOunces()
         {
-            return this.Amount / 2;
+            return new Milliliter(this.ToMilliliters()).ToFluidOunces();
         }
 
         public override decimal ToTablespoons()
         {
-            return this.Amount;
+            return new Milliliter(this.ToMilliliters()).ToTablespoons();
         }
 
         public override decimal ToTeaspoons()
         {
-            return this.Amount * 3;
+            return new Milliliter(this.ToMilliliters()).ToTeaspoons();
         }
 
         public override decimal ToCups()
         {
-            return System.Math.Round(this.Amount * 0.0625m, 2);
+            return new Milliliter(this.ToMilliliters()).ToCups();
         }
 
         public override decimal ToQuarts()
         {
-            return this.Amount * 0.015625m;
+            return new Milliliter(this.ToMilliliters()).ToQuarts();
         }
 
         public override decimal ToPints()
         {
-            return this.Amount * 0.03125m;
+            return new Milliliter(this.ToMilliliters()).ToPints();
         }
 
         public override decimal ToGallons()
         {
-            return this.Amount * 0.00390625m;
+            return new Milliliter(this.ToMilliliters()).ToGallons();
         }
     }
 }

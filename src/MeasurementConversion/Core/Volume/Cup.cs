@@ -5,10 +5,10 @@ using System.Text;
 
 namespace Jdn.Measurement.Core.Volume
 {
-    public sealed class Cup : BaseVolume, IVolume
+    public sealed class Cup : USCustomaryVolume, IVolume
     {
         public Cup(decimal cups)
-            : base(new SystemOfMeasurement(true))
+            : base()
         {
             this.unitOfMeasureAbbreviated = "C";
             this.Amount = cups;

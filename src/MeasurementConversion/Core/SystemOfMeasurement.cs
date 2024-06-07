@@ -23,7 +23,7 @@ namespace Jdn.Measurement.Core
 
         public SystemOfMeasurement(bool isUSCustomaryUnits)
         {
-            this.isUSCustomaryUnits=isUSCustomaryUnits;
+            this.isUSCustomaryUnits = isUSCustomaryUnits;
         }
     }
 }
