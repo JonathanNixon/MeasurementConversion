@@ -55,6 +55,18 @@ namespace Jdn.Measurement.Core.Volume
             return new Milliliter(ToMilliliters());
         }
 
+        public IVolume ToOptimal()
+        {
+            if (ToGallons() >= 1) return new Gallon(ToGallons());
+            if (ToCups() >= 1) return new Cup(ToCups());
+            if (ToQuarts() >= 1) return new Quart(ToQuarts());
+            if (ToPints() >= 1) return new Pint(ToPints());
+            if (ToTablespoons() >=1) return new Tablespoon(ToTablespoons());
+            if (ToTeaspoons() >= 1) return new Teaspoon(ToTeaspoons());
+
+            return new FluidOunce(ToFluidOunces());
+        }
+
         public abstract decimal ToMilliliters();
 
         public abstract decimal ToFluidOunces();

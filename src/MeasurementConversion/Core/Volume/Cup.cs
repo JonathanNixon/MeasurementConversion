@@ -6,6 +6,7 @@ using System.Text;
 namespace Jdn.Measurement.Core.Volume
 {
     public sealed class Cup : USCustomaryVolume, IVolume
+
     {
         public Cup(decimal cups)
             : base()
