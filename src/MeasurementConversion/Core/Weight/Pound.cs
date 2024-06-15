@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Jdn.Measurement.Core.Mass
+namespace Jdn.Measurement.Core.Weight
 {
-    public class Pound : BaseMass
+    public class Pound : USCustomaryWeight
     {
         public Pound(decimal pounds)
             : base()

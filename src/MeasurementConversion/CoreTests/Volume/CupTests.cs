@@ -123,7 +123,8 @@ namespace Jdn.Measurement.Core.Tests.Volume
 
             Assert.IsNotNull(result);
             Assert.IsTrue(result.ToCups() == volume.ToCups());
-            Assert.AreEqual(result.UnitOfMeasure, volume.UnitOfMeasure);
+            Assert.AreNotEqual(result.UnitOfMeasure, volume.UnitOfMeasure);
+            Assert.IsTrue(result.UnitOfMeasure == "Gallon");
         }
 
         private IVolume GetVolume(decimal value)

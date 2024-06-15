@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Jdn.Measurement.Core.Volume
 {
-    public sealed class Pint : BaseVolume, IVolume
+    public sealed class Pint : USCustomaryVolume, IVolume
     {
         public Pint(decimal pints)
             : base()

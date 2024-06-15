@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Jdn.Measurement.Core.Volume
 {
-    public sealed class Milliliter : BaseVolume, IVolume
+    public sealed class Milliliter : MetricVolume, IVolume
     {
         public Milliliter(decimal mililiters)
             : base()

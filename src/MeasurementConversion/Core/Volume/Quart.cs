@@ -5,9 +5,10 @@ using System.Text;
 
 namespace Jdn.Measurement.Core.Volume
 {
-    public sealed class Quart : BaseVolume, IVolume
+    public sealed class Quart : USCustomaryVolume, IVolume
     {
         public Quart(decimal quarts)
+            :base()
         {
             this.unitOfMeasureAbbreviated = "qt.";
             this.Amount = quarts;

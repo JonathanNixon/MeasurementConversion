@@ -4,12 +4,14 @@ using System.Text;
 
 namespace Jdn.Measurement.Core.Interfaces
 {
-    public interface IMass : IMeasurement
+    public interface IWeight : IMeasurement
     {
         decimal ToGrams();
 
         decimal ToOunces();
 
         decimal ToPounds();
+
+        IWeight ToOptimal();
     }
 }

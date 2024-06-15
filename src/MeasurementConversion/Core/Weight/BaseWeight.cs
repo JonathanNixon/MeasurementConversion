@@ -1,22 +1,26 @@
 ﻿using Jdn.Measurement.Core.Interfaces;
+using Jdn.Measurement.Core.Volume;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Jdn.Measurement.Core.Mass
+namespace Jdn.Measurement.Core.Weight
 {
-    public abstract class BaseMass : IMass
+    public abstract class BaseWeight : IWeight
     {
         protected string unitOfMeasure;
         protected string unitOfMeasureAbbreviated;
         protected string unitOfMeasurePlural;
+        private ISystemOfMeasurement systemOfMeasurement;
 
         protected int numberOfDecimalPlaces = 2;
 
-        public BaseMass()
+        public BaseWeight(ISystemOfMeasurement systemOfMeasurement)
         {
+            this.systemOfMeasurement = systemOfMeasurement;
             unitOfMeasure = this.GetType().Name;
             unitOfMeasurePlural = $"{unitOfMeasure}s";
+            unitOfMeasureAbbreviated = unitOfMeasurePlural.Substring(0, 3);
         }
 
         public decimal Amount { get; set; }
@@ -42,5 +46,32 @@ namespace Jdn.Measurement.Core.Mass
         public abstract decimal ToOunces();
 
         public abstract decimal ToPounds();
+
+        public IWeight ToOptimal()
+        {
+            var pounds = ToPounds();
+            if (pounds >= 1)
+            {
+                return new Pound(pounds);
+            }
+
+            return new Ounce(ToOunces());
+        }
+
+        private IWeight ToOptimalUSCustomaryUnits()
+        {
+            var pounds = ToPounds();
+            if (pounds >= 1)
+            {
+                return new Pound(pounds);
+            }
+
+            return new Ounce(ToOunces());
+        }
+
+        private IWeight ToOptimalMetric()
+        {
+            return new Gram(ToGrams());
+        }
     }
 }

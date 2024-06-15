@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Jdn.Measurement.Core.Volume
 {
-    public sealed class Gallon : BaseVolume, IVolume
+    public sealed class Gallon : USCustomaryVolume, IVolume
     {
         public Gallon(decimal gallons)
             : base()

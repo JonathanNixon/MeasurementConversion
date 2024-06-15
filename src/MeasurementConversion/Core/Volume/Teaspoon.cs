@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Jdn.Measurement.Core.Volume
 {
-    public sealed class Teaspoon : BaseVolume, IVolume
+    public sealed class Teaspoon : USCustomaryVolume, IVolume
     {
         public Teaspoon(decimal teaspoons)
             : base()

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Jdn.Measurement.Core.Mass
+namespace Jdn.Measurement.Core.Weight
 {
-    public class Gram : BaseMass
+    public class Gram : MetricWeight
     {
         public Gram(decimal grams)
         {

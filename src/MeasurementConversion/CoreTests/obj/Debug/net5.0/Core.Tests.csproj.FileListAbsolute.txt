@@ -97,3 +97,6 @@ C:\git\MeasurementConversion\src\MeasurementConversion\CoreTests\obj\Debug\net5.
 C:\git\MeasurementConversion\src\MeasurementConversion\CoreTests\obj\Debug\net5.0\ref\Measurement.Core.Tests.dll
 C:\git\MeasurementConversion\src\MeasurementConversion\CoreTests\obj\Debug\net5.0\Measurement.Core.Tests.pdb
 C:\git\MeasurementConversion\src\MeasurementConversion\CoreTests\obj\Debug\net5.0\Core.Tests.genruntimeconfig.cache
+C:\Users\jonat\Source\Repos\MeasurementConversion\src\MeasurementConversion\CoreTests\obj\Debug\net5.0\Measurement.Core.Tests.dll
+C:\Users\jonat\Source\Repos\MeasurementConversion\src\MeasurementConversion\CoreTests\obj\Debug\net5.0\refint\Measurement.Core.Tests.dll
+C:\Users\jonat\Source\Repos\MeasurementConversion\src\MeasurementConversion\CoreTests\obj\Debug\net5.0\Measurement.Core.Tests.pdb

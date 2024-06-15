@@ -3,21 +3,21 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Jdn.Measurement.Core.Mass
+namespace Jdn.Measurement.Core.Weight
 {
-    public static class MassFactory
+    public static class WeightFactory
     {
-        public static IMass Pounds(decimal pounds)
+        public static IWeight Pounds(decimal pounds)
         {
             return new Pound(pounds);
         }
 
-        public static IMass Ounces(decimal ounces)
+        public static IWeight Ounces(decimal ounces)
         {
             return new Ounce(ounces);
         }
 
-        public static IMass Grams(decimal grams)
+        public static IWeight Grams(decimal grams)
         {
             return new Gram(grams);
         }
