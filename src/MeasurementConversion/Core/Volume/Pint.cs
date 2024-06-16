@@ -19,6 +19,11 @@ namespace Jdn.Measurement.Core.Volume
             return Math.Round(this.Amount * 473.176473m, 2);
         }
 
+        public override decimal ToLiters()
+        {
+            return (ToMilliliters() / 1000);
+        }
+
         public override decimal ToFluidOunces()
         {
             return this.Amount * 16m;

@@ -8,6 +8,8 @@ namespace Jdn.Measurement.Core.Interfaces
     {
         decimal ToMilliliters();
 
+        decimal ToLiters();
+
         decimal ToFluidOunces();
 
         decimal ToTablespoons();
