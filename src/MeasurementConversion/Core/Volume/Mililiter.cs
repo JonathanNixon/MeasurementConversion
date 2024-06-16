@@ -19,6 +19,10 @@ namespace Jdn.Measurement.Core.Volume
             return this.Amount;
         }
 
+        public override decimal ToLiters()
+        {
+            return (ToMilliliters() / 1000);
+        }
         public override decimal ToFluidOunces()
         {
             return this.Amount * 0.0338140227m;

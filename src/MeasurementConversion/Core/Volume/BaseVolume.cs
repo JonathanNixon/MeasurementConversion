@@ -27,14 +27,10 @@ namespace Jdn.Measurement.Core.Volume
         {
             if (systemOfMeasurement.IsUSCustomaryUnits())
             {
-                ToOptimalUSCustomaryUnits();
+                return ToOptimalUSCustomaryUnits();
             }
-            else
-            {
-                return ToOptimalMetric();
-            }
-
-            return new FluidOunce(ToFluidOunces());
+           
+            return ToOptimalMetric();           
         }
 
         private IVolume ToOptimalUSCustomaryUnits()
@@ -55,18 +51,6 @@ namespace Jdn.Measurement.Core.Volume
             return new Milliliter(ToMilliliters());
         }
 
-        public IVolume ToOptimal()
-        {
-            if (ToGallons() >= 1) return new Gallon(ToGallons());
-            if (ToCups() >= 1) return new Cup(ToCups());
-            if (ToQuarts() >= 1) return new Quart(ToQuarts());
-            if (ToPints() >= 1) return new Pint(ToPints());
-            if (ToTablespoons() >=1) return new Tablespoon(ToTablespoons());
-            if (ToTeaspoons() >= 1) return new Teaspoon(ToTeaspoons());
-
-            return new FluidOunce(ToFluidOunces());
-        }
-
         public abstract decimal ToMilliliters();
 
         public abstract decimal ToFluidOunces();
@@ -82,6 +66,8 @@ namespace Jdn.Measurement.Core.Volume
         public abstract decimal ToPints();
 
         public abstract decimal ToGallons();
+
+        public abstract decimal ToLiters();
 
         public decimal Amount { get; set; }
 

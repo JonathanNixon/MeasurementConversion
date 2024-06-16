@@ -18,6 +18,15 @@ namespace Jdn.Measurement.Core.Tests.Volume
         }
 
         [TestMethod]
+        public void ToLiters()
+        {
+            var volume = GetVolume(10m);
+            var result = volume.ToLiters();
+
+            Assert.IsTrue(result > 0);
+        }
+
+        [TestMethod]
         public void ToTablespoons()
         {
             var volume = GetVolume(1m);
